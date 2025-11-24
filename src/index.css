@@ -1,0 +1,128 @@
+:root {
+  /* Font Families */
+  --font-body: 'Outfit', sans-serif;
+  --font-display: 'Press Start 2P', cursive;
+
+  /* Light Mode Colors */
+  --color-bg: #f8f9fa;
+  --color-text: #1a1a1a;
+  --color-primary: #007bff; /* Standard Blue, will be overridden by neon in dark */
+  --color-secondary: #6610f2;
+  --color-accent: #ff0055;
+  --color-surface: #ffffff;
+  --color-border: #dee2e6;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Colors (Retro Arcade / Space) */
+  --color-bg: #0a0a12; /* Deep Space */
+  --color-text: #e0e0e0;
+  --color-primary: #00f3ff; /* Neon Cyan */
+  --color-secondary: #bc13fe; /* Neon Purple */
+  --color-accent: #ff0055; /* Neon Pink */
+  --color-surface: #151520;
+  --color-border: #2a2a35;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #000; /* Contrast for neon */
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
