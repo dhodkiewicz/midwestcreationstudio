@@ -1,22 +1,21 @@
 import React from 'react';
+import AnimatedLogo from './AnimatedLogo';
 
 const Hero = () => {
-    return (
-        <section className="hero section text-center">
-            <div className="container">
-                <div className="hero-content">
-                    <div className="logo-container">
-                        <img src="/assets/mcs-logo-neon.jpg" alt="Midwest Creation Studio Neon Logo" className="hero-logo" />
-                    </div>
-                    <h1 className="hero-title">Midwest Creation Studio</h1>
-                    <p className="hero-subtitle">Clean. Simple. Elegant. <span className="highlight">EPIC.</span></p>
-                    <div className="hero-actions">
-                        <a href="#games" className="btn btn-primary">Our Games</a>
-                        <a href="#about" className="btn btn-outline">About Us</a>
-                    </div>
-                </div>
-            </div>
-            <style>{`
+  return (
+    <section className="hero section text-center">
+      <div className="container">
+        <div className="hero-content">
+          <AnimatedLogo />
+          <h1 className="hero-title">Midwest Creation Studio</h1>
+          <p className="hero-subtitle">Clean. Simple. Elegant. <span className="highlight">EPIC.</span></p>
+          <div className="hero-actions">
+            <a href="#games" className="btn btn-primary">Our Games</a>
+            <a href="#about" className="btn btn-outline">About Us</a>
+          </div>
+        </div>
+      </div>
+      <style>{`
         .hero {
           min-height: 80vh;
           display: flex;
@@ -64,8 +63,8 @@ const Hero = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Hero;
