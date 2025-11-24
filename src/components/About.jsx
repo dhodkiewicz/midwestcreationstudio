@@ -8,13 +8,18 @@ const About = () => {
                 <div className="about-content">
                     <p>
                         Midwest Creation Studio is a one-man software powerhouse based in Green Bay, Wisconsin.
-                        Founded by an AI Implementation Engineer with a passion for retro gaming and clean code.
+                        We believe games have lost their way—trading soul for microtransactions. We're here to bring back
+                        <strong> back-to-basics fun</strong>. No gimmicks, just pure gameplay.
                     </p>
                     <p>
-                        We build digital experiences that are simple, elegant, and undeniably EPIC.
-                        Our mission is to bring the joy of classic arcade gaming to the modern web,
-                        wrapped in professional-grade engineering.
+                        While our heart beats for game dev, we're also open to building custom software solutions
+                        for small to medium businesses. If you need something built right, let's talk.
                     </p>
+                    <div className="contact-info">
+                        <a href="mailto:midwestcreationstudio@gmail.com" className="contact-link">
+                            midwestcreationstudio@gmail.com
+                        </a>
+                    </div>
                 </div>
             </div>
             <style>{`
@@ -26,6 +31,20 @@ const About = () => {
         }
         .about-content p {
           margin-bottom: var(--spacing-sm);
+        }
+        .contact-info {
+          margin-top: var(--spacing-md);
+          padding-top: var(--spacing-sm);
+          border-top: 1px solid var(--color-border);
+        }
+        .contact-link {
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: var(--color-primary);
+        }
+        .contact-link:hover {
+          color: var(--color-accent);
+          text-shadow: 0 0 10px var(--color-accent);
         }
       `}</style>
         </section>
