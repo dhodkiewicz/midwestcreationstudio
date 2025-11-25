@@ -45,6 +45,7 @@ const AnimatedLogo = () => {
           position: absolute;
           transform-style: preserve-3d;
           animation: rollIn 2s ease-out forwards, float 6s ease-in-out infinite 2s;
+          will-change: transform;
         }
 
         /* The Cube */
@@ -143,10 +144,18 @@ const AnimatedLogo = () => {
             var(--color-secondary) 80%, 
             transparent 100%
           );
-          -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
-          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+          
+          /* Standardized Masking for Cross-Browser Support */
+          -webkit-mask-image: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+          mask-image: radial-gradient(farthest-side, transparent calc(100% - 4px), #fff calc(100% - 4px));
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: center;
+          mask-position: center;
+          
           animation: spinRing 3s linear infinite;
           filter: drop-shadow(0 0 5px var(--color-secondary));
+          will-change: transform; /* Performance hint */
         }
         
         /* Sparkles */
