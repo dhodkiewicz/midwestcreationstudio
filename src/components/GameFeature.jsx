@@ -1,13 +1,15 @@
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const games = [
   {
     id: 'crappy-bird',
-    title: 'Crappy Bird',
+    title: 'Crappy Bird: Origins',
     description: "Prepare for a flappin' good time! Navigate through retro-inspired obstacles in this addictive arcade classic reborn. Simple to play, impossible to master.",
-    image: '/assets/crappy-bird-icon.jpg',
+    image: '../assets/crappy-bird-icon.jpg',
     tags: ['Arcade', 'Retro', 'Mobile'],
-    action: { text: 'Coming Soon', link: '#', disabled: true }
+    action: { text: 'Learn More', link: '/crappy-bird-origins', disabled: false }
   },
   {
     id: 'mariogod',
@@ -38,6 +40,10 @@ const GameFeature = () => {
                 </div>
                 {game.action.disabled ? (
                   <button className="btn btn-primary" disabled>{game.action.text}</button>
+                ) : game.action.link.startsWith('/') ? (
+                  <Link to={game.action.link} className="btn btn-primary">
+                    {game.action.text}
+                  </Link>
                 ) : (
                   <a href={game.action.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                     {game.action.text}

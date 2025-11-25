@@ -1,29 +1,32 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('dark');
 
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-    }, [theme]);
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
-    const toggleTheme = () => {
-        setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-    };
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
-    return (
-        <header className="header">
-            <div className="container header-content">
-                <div className="logo">
-                    <span className="logo-text">MCS</span>
-                </div>
-                <nav className="nav">
-                    <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
-                        {theme === 'dark' ? '☀️' : '🌙'}
-                    </button>
-                </nav>
-            </div>
-            <style>{`
+  return (
+    <header className="header">
+      <div className="container header-content">
+        <div className="logo">
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <span className="logo-text">MCS</span>
+          </Link>
+        </div>
+        <nav className="nav">
+          <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+        </nav>
+      </div>
+      <style>{`
         .header {
           padding: var(--spacing-sm) 0;
           background-color: rgba(0, 0, 0, 0.2);
@@ -57,8 +60,8 @@ const Header = () => {
           background-color: rgba(255, 255, 255, 0.1);
         }
       `}</style>
-        </header>
-    );
+    </header>
+  );
 };
 
 export default Header;
