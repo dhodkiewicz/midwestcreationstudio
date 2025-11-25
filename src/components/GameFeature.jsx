@@ -87,9 +87,9 @@ const GameFeature = () => {
           align-items: center;
         }
         .game-image {
-          max-width: 250px;
+          max-width: 350px; /* Increased from 250px */
           width: 100%;
-          border-radius: 12px;
+          border-radius: 24px; /* Increased from 12px to cut off white corners */
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
           transition: transform var(--transition-normal);
           object-fit: cover;

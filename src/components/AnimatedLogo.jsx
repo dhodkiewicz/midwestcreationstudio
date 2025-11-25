@@ -18,13 +18,16 @@ const AnimatedLogo = () => {
           <div className="face top"></div>
           <div className="face bottom"></div>
         </div>
+
+        {/* Ring moved inside cube-wrapper to follow entrance animation */}
+        <div className="ring-wrapper">
+          <div className="ring"></div>
+          <div className="sparkle s1"></div>
+          <div className="sparkle s2"></div>
+          <div className="sparkle s3"></div>
+        </div>
       </div>
-      <div className="ring-wrapper">
-        <div className="ring"></div>
-        <div className="sparkle s1"></div>
-        <div className="sparkle s2"></div>
-        <div className="sparkle s3"></div>
-      </div>
+
       <style>{`
         .logo-scene {
           width: 200px;
@@ -32,7 +35,7 @@ const AnimatedLogo = () => {
           perspective: 1000px;
           position: relative;
           margin: 0 auto var(--spacing-md);
-          /* Scale down slightly on mobile if needed */
+          transform-style: preserve-3d; /* Enforce 3D context for Firefox */
         }
 
         /* Cube Wrapper for Entrance Animation */
@@ -68,6 +71,8 @@ const AnimatedLogo = () => {
           align-items: center;
           justify-content: center;
           backface-visibility: visible; /* Show inside of cube too */
+          /* Ensure faces don't get flattened */
+          transform-style: preserve-3d;
         }
 
         /* Face Positioning */
