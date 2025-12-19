@@ -1,8 +1,17 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import orienIcon from '../assets/orien/icon.jpg';
 
 const games = [
+  {
+    id: 'orien',
+    title: 'Orien',
+    description: "The first 100% hands-free AAC platform for individuals with ALS and motor impairments. No head tracking required—just your eyes.",
+    image: orienIcon,
+    tags: ['Accessibility', 'iOS', 'True Gaze'],
+    action: { text: 'Learn More', link: '/orien', disabled: false }
+  },
   {
     id: 'crappy-bird',
     title: 'Crappy Bird: Origins',
