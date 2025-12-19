@@ -4,9 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Orien from './pages/Orien';
-import CrappyBirdOrigins from './pages/CrappyBirdOrigins';
-import CrappyBirdPrivacy from './pages/CrappyBirdPrivacy';
-import CrappyBirdAge from './pages/CrappyBirdAge';
+import DashPulse from './pages/DashPulse';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import DashPulseAge from './pages/DashPulseAge';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/orien" element={<Orien />} />
-          <Route path="/crappy-bird-origins" element={<CrappyBirdOrigins />} />
-          <Route path="/crappy-bird-privacy" element={<CrappyBirdPrivacy />} />
-          <Route path="/crappy-bird-age-suitability" element={<CrappyBirdAge />} />
+          <Route path="/dash-pulse" element={<DashPulse />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/age-suitability" element={<DashPulseAge />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

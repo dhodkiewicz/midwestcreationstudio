@@ -6,6 +6,9 @@ const Footer = () => {
       <div className="container text-center">
         <p>&copy; {new Date().getFullYear()} Midwest Creation Studio LLC. All rights reserved.</p>
         <p className="location">Green Bay, Wisconsin 🧀</p>
+        <div className="footer-links">
+          <a href="/privacy" className="footer-link">Privacy Policy</a>
+        </div>
       </div>
       <style>{`
         .footer {
@@ -18,6 +21,20 @@ const Footer = () => {
         .location {
           margin-top: var(--spacing-xs);
           font-size: 0.8rem;
+        }
+        .footer-links {
+          margin-top: var(--spacing-sm);
+        }
+        .footer-link {
+          color: var(--color-text);
+          text-decoration: none;
+          opacity: 0.7;
+          font-size: 0.8rem;
+          transition: opacity var(--transition-fast);
+        }
+        .footer-link:hover {
+          opacity: 1;
+          text-decoration: underline;
         }
       `}</style>
     </footer>

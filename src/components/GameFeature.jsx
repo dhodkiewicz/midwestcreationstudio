@@ -13,12 +13,12 @@ const games = [
     action: { text: 'Learn More', link: '/orien', disabled: false }
   },
   {
-    id: 'crappy-bird',
-    title: 'Crappy Bird: Origins',
-    description: "Prepare for a flappin' good time! Navigate through retro-inspired obstacles in this addictive arcade classic reborn. Simple to play, impossible to master.",
-    image: '../assets/crappy-bird-icon.jpg',
-    tags: ['Arcade', 'Retro', 'Mobile'],
-    action: { text: 'Learn More', link: '/crappy-bird-origins', disabled: false }
+    id: 'dash-pulse',
+    title: 'Dash Pulse',
+    description: "Neon-soaked rhythm survival. A high-octane arcade game blending precision physics, rhythm-reactive visuals, and intense color-matching gameplay.",
+    image: '/assets/dash_pulse.png',
+    tags: ['Arcade', 'Rhythm', 'Survival'],
+    action: { text: 'Learn More', link: '/dash-pulse', disabled: false }
   },
   {
     id: 'mariogod',
