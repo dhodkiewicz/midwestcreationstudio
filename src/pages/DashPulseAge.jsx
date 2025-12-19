@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CrappyBirdAge = () => {
+const DashPulseAge = () => {
     return (
         <section className="section age-suitability">
             <div className="container text-center">
@@ -8,7 +8,7 @@ const CrappyBirdAge = () => {
                 <div className="rating-badge">4+</div>
                 <h2>Rated 4+</h2>
                 <p className="description">
-                    <strong>Crappy Bird: Origins</strong> is designed to be safe and fun for everyone.
+                    <strong>Dash Pulse</strong> is designed to be safe and fun for everyone.
                 </p>
 
                 <div className="details">
@@ -93,4 +93,4 @@ const CrappyBirdAge = () => {
     );
 };
 
-export default CrappyBirdAge;
+export default DashPulseAge;

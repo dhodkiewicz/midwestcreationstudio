@@ -44,6 +44,7 @@ This project is configured to deploy to GitHub Pages with a custom domain.
 
 ## 🎮 Featured Games
 - **Crappy Bird**: A retro-inspired arcade classic. (Coming Soon)
+- **Mariogod**: A parody of Mario meets C-suite corporate America grunge platformer. Battle through the corporate ladder in this unique, gritty take on the platforming genre.
 
 ---
 &copy; 2025 Midwest Creation Studio LLC. All rights reserved.
