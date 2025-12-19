@@ -1,0 +1,160 @@
+:root {
+  --orien-bg-top: #0F1025;
+  --orien-bg-bottom: #2B1B4D;
+  --orien-text-primary: #FFFFFF;
+  --orien-text-secondary: rgba(255, 255, 255, 0.9);
+  --orien-accent-glow: rgba(255, 255, 255, 0.1);
+  --orien-mission-bg: rgba(255, 255, 255, 0.05);
+  --orien-max-width: 1200px;
+  --orien-content-width: 800px;
+}
+
+.orien-page {
+  background: linear-gradient(to bottom, var(--orien-bg-top), var(--orien-bg-bottom));
+  color: var(--orien-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.orien-container {
+  max-width: var(--orien-max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.orien-section {
+  padding: 6rem 0;
+}
+
+.orien-h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.orien-h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.orien-subhead {
+  font-size: 1.5rem;
+  color: var(--orien-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.orien-body {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--orien-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.feature-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.feature-block.reversed {
+  direction: rtl;
+}
+
+.feature-block.reversed > * {
+  direction: ltr;
+}
+
+.device-frame {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 8px solid #1a1a1a;
+  background: #000;
+}
+
+.device-frame img {
+  width: 100%;
+  display: block;
+}
+
+/* Mission Section */
+.mission-container {
+  max-width: var(--orien-content-width);
+  margin: 0 auto;
+  background: var(--orien-mission-bg);
+  padding: 4rem;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.mission-text {
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+/* Technical Spec */
+.tech-spec {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+  border-radius: 24px;
+  border: 1px solid var(--orien-accent-glow);
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.tech-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.tech-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .orien-h1 { font-size: 3rem; }
+  .orien-h2 { font-size: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .feature-block, .feature-block.reversed {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .orien-h1 { font-size: 2.5rem; }
+  .orien-section { padding: 4rem 0; }
+  .mission-container { padding: 2rem; }
+}
