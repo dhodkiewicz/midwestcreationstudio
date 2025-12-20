@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Orien from './pages/Orien';
 import OrienPrivacy from './pages/OrienPrivacy';
+import OrienTerms from './pages/OrienTerms';
 import DashPulse from './pages/DashPulse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import DashPulseAge from './pages/DashPulseAge';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/orien" element={<Orien />} />
           <Route path="/orien/privacy" element={<OrienPrivacy />} />
+          <Route path="/orien/terms" element={<OrienTerms />} />
           <Route path="/dash-pulse" element={<DashPulse />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/age-suitability" element={<DashPulseAge />} />

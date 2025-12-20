@@ -98,7 +98,7 @@ const Orien = () => {
                             <h2 className="orien-h2">Type Without Touch</h2>
                             <h3 className="orien-subhead" style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Precision eye-tracking keyboard with instant voice output.</h3>
                             <p className="orien-body">
-                                Compose messages completely hands-free using Orien’s dwell-based keyboard. Each key is selected by focused gaze and confirmed automatically.
+                                Compose messages completely hands-free using Orien’s dwell-based keyboard. Each key is selected by focused gaze and confirm with just a blink.
                             </p>
                             <ul className="tech-list" style={{ color: 'var(--orien-text-secondary)', fontSize: '1.125rem' }}>
                                 <li>Adjustable dwell timing</li>
@@ -203,9 +203,10 @@ const Orien = () => {
             {/* Footer Section */}
             <footer className="orien-section" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                 <div className="orien-container" style={{ textAlign: 'center' }}>
-                    <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+                    <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
                         <a href="mailto:support@midwestcreationstudio.com" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Support</a>
                         <a href="/orien/privacy" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Privacy Policy</a>
+                        <a href="/orien/terms" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Terms of Use</a>
                     </div>
                     <p style={{ opacity: 0.5, fontSize: '0.9rem' }}>© 2025 Midwest Creation Studio LLC. Orien was built in the Green Bay area.</p>
                 </div>
