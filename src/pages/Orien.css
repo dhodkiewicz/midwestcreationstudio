@@ -56,9 +56,9 @@
   line-height: 1.1;
   text-transform: uppercase;
   max-width: 100%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 .orien-h2 {
@@ -67,8 +67,9 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 .orien-subhead {
@@ -164,7 +165,8 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #fff;
+  color: var(--orien-text-primary);
+  opacity: 0.8;
 }
 
 /* Media Queries */
@@ -192,11 +194,22 @@
     line-height: 1.2;
   }
 
+  .orien-h2 {
+    font-size: 1.75rem;
+  }
+
   .orien-section {
     padding: 4rem 0;
   }
 
   .mission-container {
     padding: 2rem;
+  }
+
+  .tech-list {
+    display: inline-block;
+    text-align: left;
+    margin: 1.5rem auto;
+    padding-left: 0;
   }
 }
