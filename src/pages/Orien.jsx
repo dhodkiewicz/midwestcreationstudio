@@ -156,7 +156,22 @@ const Orien = () => {
                 </div>
             </section>
 
-            {/* Optional Supporting Section: Guided From the Start */}
+            {/* Section 5: About System-Level Actions */}
+            <section className="orien-section" style={{ background: 'rgba(255,255,255,0.02)' }}>
+                <div className="orien-container">
+                    <div className="tech-spec" style={{ background: 'transparent', border: 'none', padding: '0' }}>
+                        <h2 className="orien-h2" style={{ textAlign: 'center' }}>About System-Level Actions</h2>
+                        <h3 className="orien-subhead" style={{ textAlign: 'center', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
+                            Orien is designed to prepare actions hands-free while respecting iOS system boundaries.
+                        </h3>
+                        <p className="orien-body" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+                            Access to photos, videos, and contacts is optional and controlled by the user. Orien does not manage device-level actions such as permanent deletion or message sending. Those actions remain under standard iOS control, as they would when using the device normally.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 6: Guided From the Start */}
             <section className="orien-section">
                 <div className="orien-container">
                     <div className="tech-spec">
@@ -171,24 +186,8 @@ const Orien = () => {
                 </div>
             </section>
 
-            {/* Privacy & Trust Section */}
-            <section className="orien-section">
-                <div className="orien-container">
-                    <div className="mission-container" style={{ border: '1px solid var(--orien-accent-glow)' }}>
-                        <h2 className="orien-h2">Privacy First</h2>
-                        <p className="mission-text">
-                            The device camera is used only to enable hands-free interaction.
-                            <br />
-                            No photos or videos are stored, recorded, or transmitted.
-                            <br /><br />
-                            <small style={{ fontSize: '0.8rem', opacity: 0.7 }}>Orien does not replace system accessibility features and does not make medical or diagnostic claims.</small>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
             {/* Final CTA / Closing */}
-            <section className="orien-section" style={{ textAlign: 'center', background: 'rgba(0,0,0,0.2)' }}>
+            < section className="orien-section" style={{ textAlign: 'center', background: 'rgba(0,0,0,0.2)' }}>
                 <div className="orien-container">
                     <h2 className="orien-h2">Free. Accessible. Built to Empower.</h2>
                     <p className="orien-body" style={{ maxWidth: '600px', margin: '0 auto 2rem' }}>
@@ -198,7 +197,7 @@ const Orien = () => {
                         <img src={badgeSrc} alt="Download on the App Store" style={{ height: '54px' }} />
                     </a>
                 </div>
-            </section>
+            </section >
 
             {/* Footer Section */}
             <footer className="orien-section" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
@@ -211,7 +210,7 @@ const Orien = () => {
                     <p style={{ opacity: 0.5, fontSize: '0.9rem' }}>© 2025 Midwest Creation Studio LLC. Orien was built in the Green Bay area.</p>
                 </div>
             </footer>
-        </div>
+        </div >
     );
 };
 
