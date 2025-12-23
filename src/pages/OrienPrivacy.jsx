@@ -11,7 +11,7 @@ const OrienPrivacy = () => {
             <div className="orien-container" style={{ padding: '8rem 2rem' }}>
                 <div className="tech-spec" style={{ textAlign: 'left', maxWidth: '800px', margin: '0 auto' }}>
                     <h1 className="orien-h1">Orien Privacy Policy</h1>
-                    <p className="orien-body" style={{ opacity: 0.7 }}>Last updated: December 19, 2025</p>
+                    <p className="orien-body" style={{ opacity: 0.7 }}>Last updated: December 22, 2025</p>
 
                     <div style={{ marginTop: '3rem' }}>
                         <h2 className="orien-h2">Overview</h2>
@@ -53,6 +53,16 @@ const OrienPrivacy = () => {
                             <li>No camera data is transmitted off-device</li>
                         </ul>
                         <p className="orien-body">Camera access is never used for identification, recognition, or biometric profiling.</p>
+
+                        <hr style={{ margin: '3rem 0', opacity: 0.1, border: 'none', borderTop: '1px solid currentColor' }} />
+
+                        <h2 className="orien-h2">Face Data</h2>
+                        <p className="orien-body">
+                            Orien uses the TrueDepth camera system (ARKit) to track your eye movements and blinks for navigation. This data is processed locally on your device in real-time. We do not store, retain, or share your face data with third parties.
+                        </p>
+                        <p className="orien-body">
+                            The app collects eye transform data and blend shape data (e.g., eyeBlinkLeft and eyeBlinkRight) solely to enable hands-free interaction. This information is processed frame-by-frame and immediately discarded.
+                        </p>
 
                         <hr style={{ margin: '3rem 0', opacity: 0.1, border: 'none', borderTop: '1px solid currentColor' }} />
 
@@ -159,7 +169,7 @@ const OrienPrivacy = () => {
             <footer className="orien-section" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                 <div className="orien-container" style={{ textAlign: 'center' }}>
                     <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-                        <a href="mailto:support@midwestcreationstudio.com" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Support</a>
+                        <a href="/orien/support" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Support</a>
                         <a href="/orien/privacy" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Privacy Policy</a>
                         <a href="/orien/terms" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Terms of Use</a>
                     </div>
