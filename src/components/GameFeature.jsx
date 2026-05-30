@@ -13,6 +13,22 @@ const games = [
     action: { text: 'Learn More', link: '/orien', disabled: false }
   },
   {
+    id: 'union-town-library',
+    title: 'Union Town Library',
+    description: "A warm, modern site for an independent neighborhood library in Brussels, Wisconsin—hours, services, events, and visit info, all curated by hand.",
+    image: '/assets/union-town-library.png',
+    tags: ['Web', 'Community', 'Client Work'],
+    action: { text: 'Visit Site', link: 'https://union-town-library.netlify.app', disabled: false }
+  },
+  {
+    id: 'runir',
+    title: 'Runir',
+    description: "Public-facing market insight pages—clean, data-rich per-name cards that score dealer positioning in the open, four times a day.",
+    image: '/assets/runir.png',
+    tags: ['Web', 'Finance', 'Data'],
+    action: { text: 'Visit Site', link: 'https://runir.app', disabled: false }
+  },
+  {
     id: 'dash-pulse',
     title: 'Dash Pulse',
     description: "Neon-soaked rhythm survival. A high-octane arcade game blending precision physics, rhythm-reactive visuals, and intense color-matching gameplay.",
@@ -23,10 +39,10 @@ const games = [
   {
     id: 'mariogod',
     title: 'Mariogod',
-    description: "A parody of Mario meets C-suite corporate America grunge platformer. Battle through the corporate ladder in this unique, gritty take on the platforming genre.",
+    description: "A gritty parody platformer—Mario meets C-suite corporate grunge. A side project, just for fun.",
     image: '/assets/mariogod-screenshot.png',
-    tags: ['Platformer', 'Parody', 'Web'],
-    action: { text: 'Play Now', link: 'http://mariogod.vercel.app', disabled: false }
+    tags: ['Platformer', 'Parody', 'Side Project'],
+    action: { text: 'Play', link: 'http://mariogod.vercel.app', disabled: false, variant: 'outline' }
   }
 ];
 
@@ -34,7 +50,7 @@ const GameFeature = () => {
   return (
     <section id="games" className="game-feature section">
       <div className="container">
-        <h2 className="section-title text-center">Featured Games</h2>
+        <h2 className="section-title text-center">Featured Work</h2>
         <div className="games-grid">
           {games.map((game) => (
             <div key={game.id} className="game-card">
@@ -48,13 +64,13 @@ const GameFeature = () => {
                   {game.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                 </div>
                 {game.action.disabled ? (
-                  <button className="btn btn-primary" disabled>{game.action.text}</button>
+                  <button className={`btn btn-${game.action.variant || 'primary'}`} disabled>{game.action.text}</button>
                 ) : game.action.link.startsWith('/') ? (
-                  <Link to={game.action.link} className="btn btn-primary">
+                  <Link to={game.action.link} className={`btn btn-${game.action.variant || 'primary'}`}>
                     {game.action.text}
                   </Link>
                 ) : (
-                  <a href={game.action.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a href={game.action.link} target="_blank" rel="noopener noreferrer" className={`btn btn-${game.action.variant || 'primary'}`}>
                     {game.action.text}
                   </a>
                 )}

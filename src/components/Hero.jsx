@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="hero-title">Midwest Creation Studio</h1>
           <p className="hero-subtitle">Clean. Simple. Elegant. <span className="highlight">EPIC.</span></p>
           <div className="hero-actions">
-            <a href="#games" className="btn btn-primary">Our Games</a>
+            <a href="#games" className="btn btn-primary">Our Work</a>
             <a href="#about" className="btn btn-outline">About Us</a>
           </div>
         </div>

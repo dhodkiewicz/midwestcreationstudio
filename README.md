@@ -42,9 +42,12 @@ This project is configured to deploy to GitHub Pages with a custom domain.
    npm run deploy
    ```
 
-## 🎮 Featured Games
-- **Crappy Bird**: A retro-inspired arcade classic. (Coming Soon)
-- **Mariogod**: A parody of Mario meets C-suite corporate America grunge platformer. Battle through the corporate ladder in this unique, gritty take on the platforming genre.
+## ✨ Featured Work
+- **Orien**: A 100% hands-free AAC platform for individuals with ALS and motor impairments. (In progress)
+- **Union Town Library**: A modern site for an independent neighborhood library in Brussels, WI. — [union-town-library.netlify.app](https://union-town-library.netlify.app)
+- **Runir**: Public-facing market insight pages that score dealer positioning in the open. — [runir.app](https://runir.app)
+- **Dash Pulse**: Neon-soaked rhythm survival arcade game.
+- **Mariogod**: A gritty parody platformer side project.
 
 ---
 &copy; 2025 Midwest Creation Studio LLC. All rights reserved.

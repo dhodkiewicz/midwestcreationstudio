@@ -7,13 +7,14 @@ const About = () => {
                 <h2 className="section-title text-center">About The Studio</h2>
                 <div className="about-content">
                     <p>
-                        Midwest Creation Studio is a one-man software powerhouse based in Green Bay, Wisconsin.
-                        We believe games have lost their way—trading soul for microtransactions. We're here to bring back
-                        <strong> back-to-basics fun</strong>. No gimmicks, just pure gameplay.
+                        Midwest Creation Studio is an independent software studio based in Green Bay, Wisconsin.
+                        We design and build <strong>clean, reliable software</strong>—web platforms, accessibility
+                        tools, and custom applications—for businesses and organizations that need it done right.
                     </p>
                     <p>
-                        While our heart beats for game dev, we're also open to building custom software solutions
-                        for small to medium businesses. If you need something built right, let's talk.
+                        From accessibility-first products like Orien to polished sites for local organizations,
+                        we take projects from concept to launch with a focus on craft, clarity, and lasting quality.
+                        If you have something to build, let's talk.
                     </p>
                     <div className="contact-info">
                         <a href="mailto:midwestcreationstudio@gmail.com" className="contact-link">
