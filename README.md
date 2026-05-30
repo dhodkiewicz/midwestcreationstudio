@@ -46,7 +46,6 @@ This project is configured to deploy to GitHub Pages with a custom domain.
 - **Orien**: A 100% hands-free AAC platform for individuals with ALS and motor impairments. (In progress)
 - **Union Town Library**: A modern site for an independent neighborhood library in Brussels, WI. — [union-town-library.netlify.app](https://union-town-library.netlify.app)
 - **Runir**: Public-facing market insight pages that score dealer positioning in the open. — [runir.app](https://runir.app)
-- **Dash Pulse**: Neon-soaked rhythm survival arcade game.
 - **Mariogod**: A gritty parody platformer side project.
 
 ---

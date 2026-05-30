@@ -29,14 +29,6 @@ const games = [
     action: { text: 'Visit Site', link: 'https://runir.app', disabled: false }
   },
   {
-    id: 'dash-pulse',
-    title: 'Dash Pulse',
-    description: "Neon-soaked rhythm survival. A high-octane arcade game blending precision physics, rhythm-reactive visuals, and intense color-matching gameplay.",
-    image: '/assets/dash_pulse.png',
-    tags: ['Arcade', 'Rhythm', 'Survival'],
-    action: { text: 'Learn More', link: '/dash-pulse', disabled: false }
-  },
-  {
     id: 'mariogod',
     title: 'Mariogod',
     description: "A gritty parody platformer where Mario meets C-suite corporate grunge. A side project, just for fun.",
