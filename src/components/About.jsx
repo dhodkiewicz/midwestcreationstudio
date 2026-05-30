@@ -7,13 +7,16 @@ const About = () => {
                 <h2 className="section-title text-center">About The Studio</h2>
                 <div className="about-content">
                     <p>
-                        Midwest Creation Studio is an independent software studio based in Green Bay, Wisconsin.
-                        We design and build <strong>clean, reliable software</strong>—web platforms, accessibility
-                        tools, and custom applications—for businesses and organizations that need it done right.
+                        Midwest Creation Studio is an independent software studio from the Green Bay Area
+                        (GO PACK GO!), but happy to work with anyone from anywhere. Built on years of experience
+                        in <strong>software architecture and applied AI</strong>, we design and build clean,
+                        reliable systems, from web platforms to accessibility tools to custom applications,
+                        architected to scale and built to last.
                     </p>
                     <p>
-                        From accessibility-first products like Orien to polished sites for local organizations,
-                        we take projects from concept to launch with a focus on craft, clarity, and lasting quality.
+                        From products built for accessibility like Orien to polished sites for local organizations,
+                        we bring architectural rigor and modern AI to every engagement, taking projects from
+                        concept to launch with a focus on craft, clarity, and quality that holds up.
                         If you have something to build, let's talk.
                     </p>
                     <div className="contact-info">

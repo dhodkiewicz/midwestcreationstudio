@@ -15,7 +15,7 @@ const games = [
   {
     id: 'union-town-library',
     title: 'Union Town Library',
-    description: "A warm, modern site for an independent neighborhood library in Brussels, Wisconsin—hours, services, events, and visit info, all curated by hand.",
+    description: "A warm, modern site for an independent neighborhood library in Brussels, Wisconsin, with hours, services, events, and visit info, all curated by hand.",
     image: '/assets/union-town-library.png',
     tags: ['Web', 'Community', 'Client Work'],
     action: { text: 'Visit Site', link: 'https://union-town-library.netlify.app', disabled: false }
@@ -23,7 +23,7 @@ const games = [
   {
     id: 'runir',
     title: 'Runir',
-    description: "Public-facing market insight pages—clean, data-rich per-name cards that score dealer positioning in the open, four times a day.",
+    description: "Public market insight pages with clean, detailed cards for each name, scoring dealer positioning in the open, four times a day.",
     image: '/assets/runir.png',
     tags: ['Web', 'Finance', 'Data'],
     action: { text: 'Visit Site', link: 'https://runir.app', disabled: false }
@@ -39,7 +39,7 @@ const games = [
   {
     id: 'mariogod',
     title: 'Mariogod',
-    description: "A gritty parody platformer—Mario meets C-suite corporate grunge. A side project, just for fun.",
+    description: "A gritty parody platformer where Mario meets C-suite corporate grunge. A side project, just for fun.",
     image: '/assets/mariogod-screenshot.png',
     tags: ['Platformer', 'Parody', 'Side Project'],
     action: { text: 'Play', link: 'http://mariogod.vercel.app', disabled: false, variant: 'outline' }
