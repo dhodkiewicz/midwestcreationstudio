@@ -5,8 +5,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="container text-center">
         <p>&copy; {new Date().getFullYear()} Midwest Creation Studio LLC. All rights reserved.</p>
-        <p className="location">Green Bay, Wisconsin 🧀</p>
+        <p className="location">Green Bay Area, Wisconsin</p>
         <div className="footer-links">
+          <a href="mailto:midwestcreationstudio@gmail.com" className="footer-link">Contact</a>
+          <span className="footer-sep">·</span>
           <a href="/privacy" className="footer-link">Privacy Policy</a>
         </div>
       </div>
@@ -31,6 +33,11 @@ const Footer = () => {
           opacity: 0.7;
           font-size: 0.8rem;
           transition: opacity var(--transition-fast);
+        }
+        .footer-sep {
+          opacity: 0.4;
+          font-size: 0.8rem;
+          margin: 0 0.5rem;
         }
         .footer-link:hover {
           opacity: 1;
